@@ -11,9 +11,12 @@ Iz aspekta informacione bezbednosti koristice se infrastruktura javnih kljuceva,
 
 <i><u>Funkcionalnosti:</u></i>
 
+
 -l / -list	         -lista svih apk(jar) fajlova
+
 -v / -verify         -provera ispravnosti apk(jar) fajlova
--c / -comparePublickey  -poredjenje Javnih kljuceva apk(jar) fajlova
+
+-c / -comparePublicKey  -poredjenje Javnih kljuceva apk(jar) fajlova
 
 
 <i><u>Nacin koriscenja:</u></i>

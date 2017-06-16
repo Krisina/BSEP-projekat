@@ -175,6 +175,6 @@ public class Main {
 		System.out.println("Usage: java -jar integritychecktool.jar -l <apks> <options>");
 		System.out.println("-l / -list of apk(jar) files");
 		System.out.println("-v / -verify apk(jar) files");
-		System.out.println("-c / -comparePublickey of apks(jars)");
+		System.out.println("-c / -comparePublicKey of apks(jars)");
 	}
 }
