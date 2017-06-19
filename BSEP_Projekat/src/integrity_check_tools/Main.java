@@ -85,9 +85,9 @@ public class Main {
 						// dobija odgovarajuc odgovaor
 						
 						if (status) {
-							System.out.println("[APK CHECKER] " + apkList.get(i).getFilePath() + " verification [  OK  ]");
+							System.out.println("[Integrity Tool] " + apkList.get(i).getFilePath() + " verification [OK]");
 						} else {
-							System.out.println("[APK CHECKER] " + apkList.get(i).getFilePath() + " verification [  FAILURE  ]");
+							System.out.println("[Integrity Tool] " + apkList.get(i).getFilePath() + " verification [ERROR]");
 							return;
 						}
 					} catch (Exception e) {
@@ -115,18 +115,18 @@ public class Main {
 					if (i + 1 < apkList.size()) {
 						// prijavljuje gresku ako su nam javni kljucevi razliciti
 						if (!apkList.get(i).getPublicKey().equals(apkList.get(i + 1).getPublicKey())) {
-							System.out.println("[APK CHECKER] apk public key not shared for " + apkList.get(i).getFilePath() + " and "
-									+ apkList.get(i + 1).getFilePath() + " [  FAILURE  ]");
+							System.out.println("[Integrity Tool] apk public key not shared for " + apkList.get(i).getFilePath() + " and "
+									+ apkList.get(i + 1).getFilePath() + " [ERROR]");
 							return;
 						} else {
-							System.out.println("[APK CHECKER] apk public key shared for " + apkList.get(i).getFilePath() + " and "
-									+ apkList.get(i + 1).getFilePath() + " [  OK  ]");
+							System.out.println("[Integrity Tool] apk public key shared for " + apkList.get(i).getFilePath() + " and "
+									+ apkList.get(i + 1).getFilePath() + " [OK]");
 						}
 					}
 				}
 			}
 			// ispis
-			System.out.println("[APK CHECKER] APKs refer to the same Android application");
+			System.out.println("[Integrity Tool] APKs refer to the same Android application");
 		} else {
 			System.out.println("Error apk list is empty");
 		}
