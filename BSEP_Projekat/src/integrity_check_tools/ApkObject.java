@@ -3,7 +3,6 @@ package integrity_check_tools;
 public class ApkObject {
 
 	private String filePath = "";
-
 	private String publicKey = "";
 
 	public ApkObject(String filePath) {
